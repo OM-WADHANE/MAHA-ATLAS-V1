@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Civitas Atlas — About Civitas Atlas</title>
+  <link rel="stylesheet" href="assets/civitas-v1.css" />
+</head>
+<body data-page="about">
+<div class="drawer-overlay" id="overlay" onclick="closeDrawer()"></div>
+<div class="drawer" id="drawer">
+  <div class="drawer-head">
+    <div class="drawer-logo">
+      <div class="dlogo">C</div>
+      <div>
+        <div class="dtitle">Civitas Atlas</div>
+        <div class="drawer-sub">v1.0.0 · D.P.G CO Pune</div>
+      </div>
+    </div>
+  </div>
+  <div class="drawer-nav">
+    <a href="overview.html" class="drawer-item" data-nav="overview"><span class="di-icon">📊</span><span>Overview</span></a>
+    <a href="fsi.html" class="drawer-item" data-nav="fsi"><span class="di-icon">🗺</span><span>FSI Atlas</span></a>
+    <a href="landrecords.html" class="drawer-item" data-nav="landrecords"><span class="di-icon">📋</span><span>Land Records</span></a>
+    <a href="listings.html" class="drawer-item" data-nav="listings"><span class="di-icon">🏠</span><span>Buy / Sell</span></a>
+    <a href="legal.html" class="drawer-item" data-nav="legal"><span class="di-icon">⚖️</span><span>Legal Hub</span></a>
+    <a href="security.html" class="drawer-item" data-nav="security"><span class="di-icon">🔒</span><span>Security Analysis</span></a>
+    <a href="broker.html" class="drawer-item" data-nav="broker"><span class="di-icon">🤝</span><span>Broker</span></a>
+    <a href="about.html" class="drawer-item" data-nav="about"><span class="di-icon">ℹ️</span><span>About</span></a>
+  </div>
+  <div class="drawer-foot">Developed by D.P.G CO Pune · MahaRERA Compliant</div>
+</div>
+
+<div class="main-header">
+  <div class="header-bar">
+    <div class="hamburger" onclick="openDrawer()"><span></span><span></span><span></span></div>
+    <div class="header-center">
+      <div class="header-title" id="headerTitle">About Civitas Atlas</div>
+      <div class="header-sub">Civitas Atlas · Maharashtra Property Intelligence</div>
+    </div>
+    <div class="header-actions">
+      <button class="h-btn active-lang" id="langBtn" onclick="toggleLang()">EN</button>
+      <div class="theme-toggle"><input type="checkbox" id="themeToggle" onchange="toggleTheme()" /><div class="tt-track"></div><div class="tt-thumb">☀</div></div>
+    </div>
+  </div>
+  <div class="tab-scroll" id="tabScroll">
+    <a href="overview.html" class="tab-item" data-nav="overview">Overview</a>
+    <a href="fsi.html" class="tab-item" data-nav="fsi">FSI Atlas</a>
+    <a href="landrecords.html" class="tab-item" data-nav="landrecords">Land Records</a>
+    <a href="listings.html" class="tab-item" data-nav="listings">Buy / Sell</a>
+    <a href="legal.html" class="tab-item" data-nav="legal">Legal Hub</a>
+    <a href="security.html" class="tab-item" data-nav="security">Security</a>
+    <a href="broker.html" class="tab-item" data-nav="broker">Broker</a>
+    <a href="about.html" class="tab-item" data-nav="about">About</a>
+  </div>
+</div>
+
+<div id="clients-mount"></div>
+
+<div class="content">
+<div class="section active" id="tab-about">
+  <div class="about-card">
+    <div class="about-logo">C</div>
+    <h2>Civitas Atlas</h2>
+    <p style="color:var(--acc);font-size:13px;font-weight:500;margin-bottom:8px;">Maharashtra Property Intelligence Platform</p>
+    <p>A smart platform for land records, real estate analytics, FSI mapping, and legal verification across Maharashtra. Covering metro cities, tier-2 cities, and rural regions with full MahaRERA compliance.</p>
+    <a class="about-link" href="https://omwdev.netlify.app/" target="_blank">View Portfolio →</a>
+  </div>
+  <div class="sec-card">
+    <h3>Platform Capabilities</h3>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;font-size:11px;">
+      <div style="padding:10px;background:rgba(109,40,217,0.1);border-radius:8px;text-align:center;"><div style="font-size:18px;margin-bottom:4px;">🗺</div><div style="color:var(--text);font-weight:600;">FSI Atlas</div><div style="color:var(--text2);">City & zone-wise FSI data</div></div>
+      <div style="padding:10px;background:rgba(109,40,217,0.1);border-radius:8px;text-align:center;"><div style="font-size:18px;margin-bottom:4px;">📋</div><div style="color:var(--text);font-weight:600;">Land Records</div><div style="color:var(--text2);">Mahabhulekh / iGRAS linked</div></div>
+      <div style="padding:10px;background:rgba(109,40,217,0.1);border-radius:8px;text-align:center;"><div style="font-size:18px;margin-bottom:4px;">⚖️</div><div style="color:var(--text);font-weight:600;">Legal Hub</div><div style="color:var(--text2);">Indian property law reference</div></div>
+      <div style="padding:10px;background:rgba(109,40,217,0.1);border-radius:8px;text-align:center;"><div style="font-size:18px;margin-bottom:4px;">🔒</div><div style="color:var(--text);font-weight:600;">Security Analysis</div><div style="color:var(--text2);">Title, EC & risk scoring</div></div>
+    </div>
+  </div>
+  <div class="sec-card">
+    <h3>Future Roadmap</h3>
+    <div style="display:flex;flex-direction:column;gap:6px;font-size:12px;">
+      <div style="display:flex;align-items:center;gap:8px;color:var(--text2);"><span style="color:var(--p);font-size:14px;">✦</span>AI Property Advisor — Smart recommendations</div>
+      <div style="display:flex;align-items:center;gap:8px;color:var(--text2);"><span style="color:var(--p);font-size:14px;">✦</span>Fraud Detection Engine — ML-based title fraud</div>
+      <div style="display:flex;align-items:center;gap:8px;color:var(--text2);"><span style="color:var(--p);font-size:14px;">✦</span>Voice Search — Marathi & Hindi support</div>
+      <div style="display:flex;align-items:center;gap:8px;color:var(--text2);"><span style="color:var(--p);font-size:14px;">✦</span>Map Integration — GIS FSI overlay on satellite</div>
+    </div>
+  </div>
+  <!-- <div style="text-align:center;padding:12px;font-size:10px;color:var(--text3);">Developed by D.P.G CO Pune · Civitas Atlas v1.0.0 · MahaRERA Compliant</div> -->
+</div>
+</div>
+
+<footer class="site-footer-v1">
+  Developed by D.P.G CO Pune · Civitas Atlas v1.0.0 · MahaRERA Compliant · OMW.DEV
+  <a href="https://omwdev.netlify.app/" target="_blank" rel="noopener noreferrer">Portfolio</a>
+</footer>
+
+  <script src="assets/civitas-v1-core.js"></script>
+
+</body>
+</html>
